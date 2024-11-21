@@ -33,6 +33,10 @@ namespace Tyuiu.OsadetsAA.Sprint5.Task0.V13
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
+
+            Console.WriteLine("Файл: " + filePath);
+            Console.WriteLine("Создан!");
+            Console.WriteLine("Результат вычисления z: " + result);
         }
     }
 }
