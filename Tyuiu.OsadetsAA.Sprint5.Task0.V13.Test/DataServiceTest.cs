@@ -10,7 +10,7 @@ namespace Tyuiu.OsadetsAA.Sprint5.Task0.V13.Test
         public void CheckedExistFile()
         {
             DataService ds = new DataService();
-            string path = ds.SaveToFileTextData(3);
+            string path = ds.SaveToFileTextData(5);
             bool fileExists = File.Exists(path);
             Assert.IsTrue(fileExists, "Файл не был создан");
             string content = File.ReadAllText(path);
