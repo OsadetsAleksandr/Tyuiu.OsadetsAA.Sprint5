@@ -7,7 +7,7 @@ namespace Tyuiu.OsadetsAA.Sprint5.Task0.V13.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void CheckedExistFile()
+        public void SaveToFileTextData()
         {
             DataService ds = new DataService();
             string path = ds.SaveToFileTextData(5);
