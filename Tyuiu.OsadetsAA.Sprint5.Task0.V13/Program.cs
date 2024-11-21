@@ -25,7 +25,7 @@ namespace Tyuiu.OsadetsAA.Sprint5.Task0.V13
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            int x = Convert.ToInt32(Console.ReadLine());
+            int x = 5;
 
             Console.WriteLine("x: " + x);
             string filePath = ds.SaveToFileTextData(x);
