@@ -22,14 +22,12 @@ namespace Tyuiu.OsadetsAA.Sprint5.Task1.V30.Lib
                 if (i == 1)
                 {
                     y = 0;
+                    strY = y.ToString();
                 }
-                
-                y = Math.Round((Math.Cos(i) + (Math.Sin(i)) / (2 - (2 * i)) - 4 * i), 2);
-                strY = y.ToString();
-               
-                if (i == 1)
+                else
                 {
-                    y = 0;
+                    y = Math.Round((Math.Cos(i) + (Math.Sin(i)) / (2 - (2 * i)) - 4 * i), 2);
+                    strY = y.ToString();
                 }
 
                 if (i != stopValue)

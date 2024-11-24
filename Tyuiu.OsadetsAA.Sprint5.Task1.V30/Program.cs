@@ -31,7 +31,7 @@ namespace Tyuiu.OsadetsAA.Sprint5.Task1.V30
             Console.WriteLine("***************************************************************************");
 
             string res = ds.SaveToFileTextData(startValue, stopValue);
-            Console.WriteLine(res);
+            Console.WriteLine(File.ReadAllText(res));
         }
     }
 }
