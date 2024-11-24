@@ -26,6 +26,11 @@ namespace Tyuiu.OsadetsAA.Sprint5.Task1.V30.Lib
                 
                 y = Math.Round((Math.Cos(i) + (Math.Sin(i)) / (2 - (2 * i)) - 4 * i), 2);
                 strY = y.ToString();
+               
+                if (2 - 2 * i == 0)
+                {
+                    y = 0;
+                }
 
                 if (i != stopValue)
                 {
