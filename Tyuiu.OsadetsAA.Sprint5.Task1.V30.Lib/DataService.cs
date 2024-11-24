@@ -23,11 +23,10 @@ namespace Tyuiu.OsadetsAA.Sprint5.Task1.V30.Lib
                 {
                     y = 0;
                 }
-                else
-                {
-                    y = Math.Round((Math.Cos(i) + (Math.Sin(i)) / (2 - (2 * i)) - 4 * i), 2);
-                    strY = y.ToString();
-                }
+                
+                y = Math.Round((Math.Cos(i) + (Math.Sin(i)) / (2 - (2 * i)) - 4 * i), 2);
+                strY = y.ToString();
+
                 if (i != stopValue)
                 {
                     File.AppendAllText(path, strY + Environment.NewLine);
