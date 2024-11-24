@@ -19,7 +19,7 @@ namespace Tyuiu.OsadetsAA.Sprint5.Task1.V30.Lib
             double y;
             for (int i = startValue; i <= stopValue; i++)
             {
-                if (2 - (2 * i) == 0)
+                if (2 - 2 * i == 0)
                 {
                     y = 0;
                 }
