@@ -31,7 +31,9 @@ namespace Tyuiu.OsadetsAA.Sprint5.Task4.V20
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
             double res = ds.LoadFromDataFile(path);
-            Console.WriteLine(res);
+            string s = res.ToString();
+            string d = s.Replace(",", ".");
+            Console.WriteLine(d);
         }
     }
 }

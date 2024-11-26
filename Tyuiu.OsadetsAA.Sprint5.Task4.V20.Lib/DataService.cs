@@ -9,9 +9,7 @@ namespace Tyuiu.OsadetsAA.Sprint5.Task4.V20.Lib
             string strX = File.ReadAllText(path);
             double x = double.Parse(strX);
             double res = Math.Round(Math.Pow(((Math.Pow(x, 2)) / (Math.Sin(x))), 3), 3);
-            string s = res.ToString();
-            string d = s.Replace(",", ".");
-            return d;
+            return res;
 
         }
     }
