@@ -24,10 +24,6 @@ namespace Tyuiu.OsadetsAA.Sprint5.Task2.V24.Lib
                     {
                         matrix[i, j] = 1;
                     }
-                    if (matrix[i, j] < 0)
-                    {
-                        matrix[i, j] = 0;
-                    }
                     else
                     {
                         matrix[i, j] = 0;
