@@ -24,7 +24,7 @@ namespace Tyuiu.OsadetsAA.Sprint5.Task4.V20
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            string path = Path.Combine(Path.GetTempPath(), "InPutDataFileTask4V20.txt"); ;
+            string path = Path.Combine("C:", "DataSprint5", "InPutDataFileTask4V20.txt"); ;
             Console.WriteLine("Данные находятся в файле: " + path);
 
             Console.WriteLine("***************************************************************************");
