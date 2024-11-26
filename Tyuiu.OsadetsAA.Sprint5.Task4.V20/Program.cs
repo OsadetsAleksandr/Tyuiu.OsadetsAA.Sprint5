@@ -32,7 +32,6 @@ namespace Tyuiu.OsadetsAA.Sprint5.Task4.V20
             Console.WriteLine("***************************************************************************");
             double res = ds.LoadFromDataFile(path);
             Console.WriteLine(res);
-
         }
     }
 }
