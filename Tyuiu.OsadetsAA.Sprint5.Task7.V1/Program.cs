@@ -22,8 +22,8 @@ class Program
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
         Console.WriteLine("***************************************************************************");
 
-        string path = Path.Combine("C:", "DataSprint5", "InPutDataFileTask7V1.txt");
-        string pathSave = Path.Combine("C:", "DataSprint5", "OutPutDataFileTask7V1");
+        string path = Path.Combine(@"C:\DataSprint5", "InPutDataFileTask7V1.txt");
+        string pathSave = Path.Combine(@"C:\DataSprint5", "OutPutDataFileTask7V1");
 
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");

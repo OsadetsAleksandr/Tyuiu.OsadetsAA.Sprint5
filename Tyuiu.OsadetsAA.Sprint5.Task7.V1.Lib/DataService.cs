@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Text.RegularExpressions;
 using tyuiu.cources.programming.interfaces.Sprint5;
 namespace Tyuiu.OsadetsAA.Sprint5.Task7.V1.Lib;
 
@@ -20,15 +21,8 @@ public class DataService : ISprint5Task7V1
             string line;
             while ((line = reader.ReadLine()) != null)
             {
-                foreach (char c in path)
-                {
-                    if (!char.IsDigit(c))
-                    {
-                        strLine += c;
-                    }
-                }
-                File.AppendAllText(pathSave, strLine + Environment.NewLine);
-                strLine = "";
+                string proc = Regex.Replace(line, @"\d", "");
+                File.AppendAllText(pathSave, proc + Environment.NewLine);
             }
         }
         return pathSave;
