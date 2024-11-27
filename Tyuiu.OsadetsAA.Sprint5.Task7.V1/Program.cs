@@ -1,39 +1,35 @@
 ﻿using System.IO;
-using System.Text.RegularExpressions;
 using Tyuiu.OsadetsAA.Sprint5.Task7.V1.Lib;
-namespace Tyuiu.OsadetsAA.Sprint5.Task7.V1
+namespace Tyuiu.OsadetsAA.Sprint5.Task7.V1;
+
+class Program
 {
-    internal class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            DataService ds = new DataService();
-            Console.Title = ("Спринт #5 | Выполнил: Осадец А. А. | ПКТб-24-1");
-            Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* Спринт #5                                                               *");
-            Console.WriteLine("* Тема: Добавление к решению итоговых проектов по спринту                 *");
-            Console.WriteLine("* Задание #7                                                              *");
-            Console.WriteLine("* Вариант #1                                                              *");
-            Console.WriteLine("* Выполнил: Осадец Александр Александрович | ПКТб-24-1                    *");
-            Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Удалить все цифры из файла. Полученный результат сохранить в файл       *");
-            Console.WriteLine("* OutPutDataFileTask7V1.txt.                                              *");
-            Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
-            Console.WriteLine("***************************************************************************");
+        DataService ds = new DataService();
+        Console.Title = ("Спринт #5 | Выполнил: Осадец А. А. | ПКТб-24-1");
+        Console.WriteLine("***************************************************************************");
+        Console.WriteLine("* Спринт #5                                                               *");
+        Console.WriteLine("* Тема: Класс File. Запись данных в текстовый файл                        *");
+        Console.WriteLine("* Задание #7                                                              *");
+        Console.WriteLine("* Вариант #1                                                              *");
+        Console.WriteLine("* Выполнил: Осадец Александр Александрович | ПКТб-24-1                    *");
+        Console.WriteLine("***************************************************************************");
+        Console.WriteLine("* УСЛОВИЕ:                                                                *");
+        Console.WriteLine("* Удалить все цифры из файла. Полученный результат сохранить в файл       *");
+        Console.WriteLine("* OutPutDataFileTask7V1.txt.                                              *");
+        Console.WriteLine("***************************************************************************");
+        Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
+        Console.WriteLine("***************************************************************************");
 
-            string path = @"C:\DataSprint5\InPutDataFileTask7V1.txt";
-            Console.WriteLine("Данные находятся в файле: " + path);
-            string pathSave = @"C:\DataSprint5\OutPutDataFileTask7V1.txt";
-            Console.WriteLine("Данные сохранятся в файл: " + pathSave);
+        string path = Path.Combine("C:", "DataSprint5", "InPutDataFileTask7V1.txt");
+        string pathSave = Path.Combine("C:", "DataSprint5", "OutPutDataFileTask7V1");
 
-            Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
-            Console.WriteLine("***************************************************************************");
-            pathSave = ds.LoadDataAndSave(path);
-            Console.WriteLine(pathSave);
+        Console.WriteLine("***************************************************************************");
+        Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
+        Console.WriteLine("***************************************************************************");
 
-        }
+        pathSave = ds.LoadDataAndSave(path);
+        Console.WriteLine(pathSave);
     }
 }
