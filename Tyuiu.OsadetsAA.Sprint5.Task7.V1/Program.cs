@@ -24,14 +24,14 @@ namespace Tyuiu.OsadetsAA.Sprint5.Task7.V1
 
             string path = Path.Combine("C:", "DataSprint5", "InPutDataFileTask7V1.txt");
             Console.WriteLine("Данные находятся в файле: " + path);
-            string pathSave = Path.Combine("C:", "DataSprint5", "OutPutFileTask7V1.txt");
+            string pathSave = Path.Combine("C:", "DataSprint5", "OutPutDataFileTask7V1.txt");
             Console.WriteLine("Данные сохранятся в файл: " + pathSave);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
             pathSave = ds.LoadDataAndSave(path);
-            Console.WriteLine(pathSave);
+            Console.WriteLine(File.ReadAllText(pathSave));
         }
     }
 }

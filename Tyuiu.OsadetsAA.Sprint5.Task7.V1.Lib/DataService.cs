@@ -6,7 +6,7 @@ namespace Tyuiu.OsadetsAA.Sprint5.Task7.V1.Lib
     {
         public string LoadDataAndSave(string path)
         {
-            string pathSave = $@"{Path.GetTempPath()}OutPutFileTask7V1.txt";
+            string pathSave = $@"{Path.GetTempPath()}OutPutDataFileTask7V1.txt";
             FileInfo fileInfo = new FileInfo(pathSave);
             bool fileExists = fileInfo.Exists;
             if (fileExists)
@@ -24,7 +24,7 @@ namespace Tyuiu.OsadetsAA.Sprint5.Task7.V1.Lib
             }
             File.AppendAllText(pathSave, str + Environment.NewLine);
             str = "";
-            return pathSave;
+            return File.ReadAllText(pathSave);
         }
     }
 }
