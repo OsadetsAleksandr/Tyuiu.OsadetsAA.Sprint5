@@ -13,18 +13,15 @@ namespace Tyuiu.OsadetsAA.Sprint5.Task7.V1.Lib
             {
                 File.Delete(pathSave);
             }
-            string str = "";
-
-            for (int i = 0; i < path.Length; i++)
+            string result = "";
+            foreach (char c in path)
             {
-                if ((path[i] != 1) && (path[i] != 2) && (path[i] != 3) && (path[i] != 4) && (path[i] != 5) && (path[i] != 6) && (path[i] != 7) && (path[i] != 8) && (path[i] != 9) && (path[i] != 0))
+                if (!char.IsDigit(c))
                 {
-                    str += path[i];
+                    result += c;
                 }
             }
-            File.AppendAllText(pathSave, str + Environment.NewLine);
-            str = "";
-            return File.ReadAllText(pathSave);
+            return result;
         }
     }
 }

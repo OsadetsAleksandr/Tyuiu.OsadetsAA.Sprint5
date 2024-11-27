@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Text.RegularExpressions;
 using Tyuiu.OsadetsAA.Sprint5.Task7.V1.Lib;
 namespace Tyuiu.OsadetsAA.Sprint5.Task7.V1
 {
@@ -22,16 +23,17 @@ namespace Tyuiu.OsadetsAA.Sprint5.Task7.V1
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            string path = Path.Combine("C:", "DataSprint5", "InPutDataFileTask7V1.txt");
+            string path = @"C:\DataSprint5\InPutDataFileTask7V1.txt";
             Console.WriteLine("Данные находятся в файле: " + path);
-            string pathSave = Path.Combine("C:", "DataSprint5", "OutPutDataFileTask7V1.txt");
+            string pathSave = @"C:\DataSprint5\OutPutDataFileTask7V1.txt";
             Console.WriteLine("Данные сохранятся в файл: " + pathSave);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
             pathSave = ds.LoadDataAndSave(path);
-            Console.WriteLine(File.ReadAllText(pathSave));
+            Console.WriteLine(pathSave);
+
         }
     }
 }
