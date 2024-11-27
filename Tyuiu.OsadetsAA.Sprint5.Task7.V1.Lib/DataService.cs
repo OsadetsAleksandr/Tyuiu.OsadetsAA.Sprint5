@@ -22,6 +22,7 @@ public class DataService : ISprint5Task7V1
             while ((line = reader.ReadLine()) != null)
             {
                 string proc = Regex.Replace(line, @"\d", "");
+                proc = proc.Remove(proc.Length - 1);
                 File.AppendAllText(pathSave, proc + Environment.NewLine);
             }
         }
